@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/taxdemo?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password:
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+server:
+  port: 8085
+
+tax:
+  apiKey: 26e9be5e98fa64178b16f7f942572fbc
